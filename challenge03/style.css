@@ -1,0 +1,52 @@
+/* 
+ * desktop:
+ * max-width: 1440px;
+ * max-height: 1024px;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #23424a;
+  padding: 7%;
+}
+
+.intro {
+  width: 50%;
+  font-family: "Roboto";
+  color: white;
+}
+
+.intro h1 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.intro p {
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.button {
+  padding: 0.3%;
+  background-color: #38cfd9;
+  border-radius: 31.5px;
+  width: 30%;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 21px;
+}
