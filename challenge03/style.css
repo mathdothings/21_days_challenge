@@ -1,3 +1,7 @@
+:root {
+  --max-width: 700px;
+}
+
 *,
 *::after,
 *::before {
@@ -20,7 +24,7 @@ body {
 
 .container {
   width: 80%;
-  max-width: 800px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -40,7 +44,7 @@ body {
 }
 
 .main__text--link {
-  font-size: 21px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -58,4 +62,10 @@ body {
 .button:hover,
 .button:focus {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 12px; /* change the rem unit to 12px */
+  }
 }
