@@ -1,0 +1,116 @@
+:root {
+  --max-width: 700px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* defining the rem unit to 16px */
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.hero {
+  background-color: #23424a;
+  padding: 5rem 0;
+}
+
+.container {
+  width: 80%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main__text {
+  color: white;
+  width: 80%;
+}
+
+.main__text--title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.main__text--paragraph {
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+
+.main__text--link {
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  text-align: center;
+}
+
+.col + .col {
+  margin-left: 1rem;
+}
+
+.col__title {
+  font-size: 2.25rem;
+}
+
+.col__title--highlight {
+  color: #87629a;
+}
+
+.col__title--light {
+  color: white;
+}
+
+.col__parag {
+  color: #3a3a3a;
+  font-size: 1.3125rem;
+}
+
+.col__parag--highlight {
+  color: white;
+}
+
+.container:nth-child(3) {
+  background-color: #136c72;
+  width: 100%;
+  max-width: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  background-color: #38cfd9;
+  text-decoration: none;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  color: #23424a;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px; /* change the rem unit to 12px */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 10px;
+  }
+}
