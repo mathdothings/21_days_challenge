@@ -1,52 +1,61 @@
-/* 
- * desktop:
- * max-width: 1440px;
- * max-height: 1024px;
-*/
-
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* defining the rem unit to 16px */
 }
 
 body {
   margin: 0;
+  font-family: "Roboto";
+}
+
+.main {
+  background-color: #23424a;
+  padding: 5rem 0;
 }
 
 .container {
-  background-color: #23424a;
-  padding: 7%;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.intro {
-  width: 50%;
-  font-family: "Roboto";
+.main__text {
   color: white;
+  width: 80%;
 }
 
-.intro h1 {
+.main__text--title {
+  font-size: 3rem;
   font-weight: 900;
-  font-size: 48px;
 }
 
-.intro p {
+.main__text--paragraph {
+  font-size: 2rem;
   font-weight: 400;
+}
+
+.main__text--link {
   font-size: 21px;
+  font-weight: 700;
 }
 
 .button {
-  padding: 0.3%;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 100px;
   background-color: #38cfd9;
-  border-radius: 31.5px;
-  width: 30%;
-  text-align: center;
-  margin-top: 7%;
+  text-decoration: none;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  color: #23424a;
 }
 
-.button a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 21px;
+.button:hover,
+.button:focus {
+  opacity: 0.5;
 }
