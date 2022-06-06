@@ -39,12 +39,12 @@ body {
 }
 
 .main__text--paragraph {
-  font-size: 2rem;
+  font-size: 1.3125rem;
   font-weight: 400;
 }
 
 .main__text--link {
-  font-size: 2rem;
+  font-size: 1.3125rem;
   font-weight: 700;
 }
 
