@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #f3eed9;
+  --brawn: #824936;
+  --black: #222c2a;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: min(80%, 1128px); /* test with 70.5rem instead of pixels */
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: var(--yellow);
+  padding: 10rem 0;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  text-align: center;
+}
+
+.hero__title--soft {
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  margin: 0;
+  font-weight: 300;
+}
+
+.hero__title--main {
+  color: var(--brawn);
+  font-size: 3.75rem;
+  margin: 0.5rem 0;
+}
