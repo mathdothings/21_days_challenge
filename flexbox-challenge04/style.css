@@ -33,11 +33,10 @@ body {
 }
 
 .hero > .container {
-  margin: 0 auto;
   width: min(
     60%,
     1128px
-  ); /* make only the first .container with smaller width */
+  ); /* turns only the first .container to have a smaller width */
 }
 
 .hero__title {
@@ -122,8 +121,8 @@ body > :nth-child(4) {
 }
 
 .about__img {
-  min-height: 20rem; /* set minimum height for that img */
-  max-height: 100%; /* allow that img to grow div-completly along */
+  min-height: 20rem; /* set the minimum height for that img */
+  max-height: 100%; /* allow that img to grow through space available */
   max-width: 100%;
   max-width: 100%;
 }
