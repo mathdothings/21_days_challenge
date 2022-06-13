@@ -8,6 +8,7 @@
   --yellow: #f3eed9;
   --brawn: #824936;
   --black: #222c2a;
+  --white: #ffffff;
 }
 
 html {
@@ -33,6 +34,7 @@ body {
 
 .hero__title {
   text-align: center;
+  margin: 0 5rem;
 }
 
 .hero__title--soft {
@@ -47,5 +49,78 @@ body {
 .hero__title--main {
   color: var(--brawn);
   font-size: 3.75rem;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
+  font-family: "Playfair";
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.feature {
+  margin: 4rem 0;
+}
+
+.feature__title {
+  color: var(--brawn);
+  font-family: "Playfair";
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.col {
+  width: 50%;
+}
+
+.feature__description {
+  line-height: 1.5rem;
+  color: var(--black);
+  font-family: "Roboto";
+  font-size: 1.3125rem;
+}
+
+/* select first .about div  who is the 3rd direct child of body */
+body > :nth-child(3) {
+  background-color: var(--black);
+}
+/* select last .about div who is the 4th direct child of body */
+body > :nth-child(4) {
+  background-color: var(--brawn);
+}
+
+/* select the first direct child of .about who is the .container */
+.about > :first-child {
+  padding: 3rem 0;
+}
+
+.about {
+  color: var(--white);
+}
+
+.about__title {
+  font-size: 2.25rem;
+  margin-top: 0;
+  font-family: "Playfair";
+  font-weight: 900;
+}
+
+.about__description {
+  font-size: 1.3125rem;
+  font-family: "Roboto";
+}
+
+.about__img {
+  min-height: 20rem; /* set minimum height for that img */
+  max-height: 100%; /* allow that img to grow div-completly along */
+  max-width: 100%;
+  max-width: 100%;
+}
+
+.about > :last-child {
+  padding: 3rem 0;
 }
