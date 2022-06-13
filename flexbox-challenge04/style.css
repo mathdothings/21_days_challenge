@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: min(80%, 1128px); /* test with 70.5rem instead of pixels */
+  width: min(80%, 1128px);
   margin: 0 auto;
 }
 
@@ -32,9 +32,16 @@ body {
   align-items: center;
 }
 
+.hero > .container {
+  margin: 0 auto;
+  width: min(
+    60%,
+    1128px
+  ); /* make only the first .container with smaller width */
+}
+
 .hero__title {
   text-align: center;
-  margin: 0 5rem;
 }
 
 .hero__title--soft {
