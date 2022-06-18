@@ -126,35 +126,6 @@ header {
   position: absolute;
 }
 
-.nav__list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.nav__item {
-  padding: 1rem 0;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.nav__link {
-  color: white;
-  text-decoration: none;
-  font-feature-settings: 2rem;
-}
-
-.nav__link:hover {
-  opacity: 0.5;
-}
-
-.nav__link--button {
-  color: #136c72;
-  background-color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 100px;
-  font-weight: 700;
-}
-
 .nav--visible {
   visibility: visible;
   height: auto;
@@ -163,6 +134,42 @@ header {
 
 .logo {
   height: 30px;
+}
+
+.nav__list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__list--primary {
+  margin: 2rem 0;
+}
+
+.nav__list--secondary {
+  margin: 4rem 0;
+}
+
+.nav__item {
+  padding: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+.nav__link--button {
+  background-color: white;
+  color: #23424a;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-weight: 900;
 }
 
 .hero {
