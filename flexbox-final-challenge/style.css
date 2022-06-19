@@ -1,0 +1,69 @@
+:root {
+  --font-oswald: "Oswald";
+  --font-montserrat: "Montserrat";
+  --dark: #2e323f;
+  --middle: #3b4050;
+  --gray: #6f737f;
+  --white: #fff;
+  --brown: #a59678;
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: var(--dark);
+  font-family: var(--font-oswald);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.nav__menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.5;
+}
+
+.nav__link--button {
+  padding: 0.25rem 1rem;
+  background-color: var(--brown);
+  border-radius: 9rem;
+  color: var(--white);
+}
+
+.nav__link--button:hover {
+  color: var(--brown);
+  background-color: var(--white);
+  opacity: 1;
+}
