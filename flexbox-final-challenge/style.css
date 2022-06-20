@@ -31,7 +31,7 @@ html {
   font-family: var(--oswald);
   color: var(--white);
   font-size: 1.125rem;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: right;
 }
 
@@ -48,10 +48,12 @@ html {
 
 .nav-toggle--caption {
   display: inline;
+  font-size: 1.25rem;
 }
 
 .nav-toggle--button-rotate {
   transform: rotate(180deg);
+  margin-bottom: 1.5rem;
 }
 
 .nav-toggle--visible {
@@ -115,15 +117,15 @@ html {
 .hero {
   background-color: var(--middle);
   color: var(--white);
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .hero__title {
-  padding: 4rem 0;
   text-align: center;
   font-size: 3rem;
   font-family: var(--oswald);
   line-height: 1.25;
+  padding-bottom: 3rem;
 }
 
 .hero__title--ascent {
@@ -161,7 +163,7 @@ html {
 
 .feature__title {
   color: var(--brown);
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   font-family: var(--oswald);
   font-size: 1.5rem;
   text-align: center;
@@ -183,8 +185,7 @@ html {
   margin: 2rem 0;
 }
 
-/* select 3rd direct child of .main who is also a .feature */
-.main > .feature:nth-child(4) {
+.feature--darkbg {
   background-color: var(--dark);
 }
 
@@ -227,11 +228,101 @@ html {
 
 .about__link {
   text-decoration: none;
-  color: var(--white);
+  color: var(--gray);
   display: inline-block;
 }
 
 .about__link:hover,
 .about__link:focus {
-  opacity: 0.5;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: min(90%, 1200px);
+  }
+
+  .nav-toggle--visible {
+    display: block;
+  }
+
+  .nav-toggle--button {
+    display: none;
+  }
+
+  .nav-toggle--caption {
+    display: none;
+  }
+
+  .nav-row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav-column {
+    display: flex;
+  }
+
+  .nav {
+    padding: 0.85rem 0;
+  }
+
+  .nav__menu {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .nav__menu--primary .nav__item {
+    margin-left: 0;
+  }
+
+  .hero-row {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 2rem;
+  }
+
+  .hero {
+    padding: 5rem 0;
+  }
+
+  .hero__title {
+    padding-bottom: 0;
+  }
+
+  .feature-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .feature__description {
+    margin-bottom: 1rem;
+  }
+
+  .feature-column--bg-white {
+    background-color: var(--white);
+  }
+
+  .feature-row--two-columns {
+    margin: 5rem 4rem;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .about--smaller {
+    width: 40%;
+  }
 }

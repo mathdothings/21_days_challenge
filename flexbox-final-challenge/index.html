@@ -19,35 +19,39 @@
         <div class="container">
           <a class="nav-toggle--button" href="#">⇣</a>
           <p class="nav-toggle--caption">Menu</p>
-          <section class="nav-toggle nav-toggle--visible">
-            <section class="nav__menu--primary">
-              <menu class="nav__menu">
-                <li class="nav__item"><a class="nav__link">crl</a></li>
-              </menu>
-            </section>
-            <section class="nav__menu--secondary">
-              <menu class="nav__menu">
-                <li class="nav__item"><a class="nav__link">home</a></li>
-                <li class="nav__item"><a class="nav__link">about</a></li>
-                <li class="nav__item"><a class="nav__link">contact</a></li>
-              </menu>
-            </section>
-            <section class="nav__menu--tertiary">
-              <menu class="nav__menu">
-                <li class="nav__item"><a class="nav__link">sign in</a></li>
-                <li class="nav__item">
-                  <a class="nav__link nav__link--button">sign up</a>
-                </li>
-              </menu>
-            </section>
+          <section class="nav-toggle nav-toggle--visible nav-row">
+            <div class="nav-column">
+              <section class="nav__menu--primary">
+                <menu class="nav__menu">
+                  <li class="nav__item"><a class="nav__link">crl</a></li>
+                </menu>
+              </section>
+            </div>
+            <div class="nav-column">
+              <section class="nav__menu--secondary">
+                <menu class="nav__menu">
+                  <li class="nav__item"><a class="nav__link">home</a></li>
+                  <li class="nav__item"><a class="nav__link">about</a></li>
+                  <li class="nav__item"><a class="nav__link">contact</a></li>
+                </menu>
+              </section>
+              <section class="nav__menu--tertiary">
+                <menu class="nav__menu">
+                  <li class="nav__item"><a class="nav__link">sign in</a></li>
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--button">sign up</a>
+                  </li>
+                </menu>
+              </section>
+            </div>
           </section>
         </div>
       </nav>
     </header>
     <main class="main">
       <section class="hero">
-        <div class="container">
-          <section>
+        <div class="container hero-row">
+          <section class="hero-column">
             <h1 class="hero__title">
               Responsive layouts
               <span class="hero__title--ascent"
@@ -55,19 +59,21 @@
               >
             </h1>
           </section>
-          <section>
-            <p class="hero__description">
-              Dolor eos minus dignissimos odio voluptatum tempora labore!
-              Tempore nam suscipit aspernatur rerum voluptate Laborum vero
-              provident excepturi dolor numquam.
-            </p>
-            <p><a class="hero__link" href="#">i want to learn</a></p>
-          </section>
+          <div class="hero-column">
+            <section>
+              <p class="hero__description">
+                Dolor eos minus dignissimos odio voluptatum tempora labore!
+                Tempore nam suscipit aspernatur rerum voluptate Laborum vero
+                provident excepturi dolor numquam.
+              </p>
+              <p><a class="hero__link" href="#">i want to learn</a></p>
+            </section>
+          </div>
         </div>
       </section>
       <section class="feature">
-        <div class="container">
-          <section>
+        <div class="container feature-row">
+          <section class="feature-column">
             <h3 class="feature__title">Mobile-first</h3>
             <p class="feature__description">
               Amet provident inventore ipsum tempora lorem commodi Saepe
@@ -77,7 +83,7 @@
               reprehenderit fugit recusandae.
             </p>
           </section>
-          <section>
+          <section class="feature-column">
             <h3 class="feature__title">Efficient</h3>
             <p class="feature__description">
               Consectetur quidem cumque animi sunt dignissimos! Odio numquam
@@ -87,7 +93,7 @@
               magnam Aliquam veritatis?
             </p>
           </section>
-          <section>
+          <section class="feature-column">
             <h3 class="feature__title">Done right</h3>
             <p class="feature__description">
               Consectetur quidem cumque animi sunt dignissimos! Odio numquam
@@ -100,122 +106,129 @@
           </section>
         </div>
       </section>
-      <section class="feature">
-        <div class="container">
-          <section>
-            <h3 class="feature__title">It doesn't have to be so hard</h3>
-            <p class="feature__description">
-              Lorem ex sit aspernatur cum neque, harum quasi error natus
-              exercitationem? Et iusto temporibus quasi quam tempora Dignissimos
-              porro omnis soluta sequi voluptates Natus itaque aut obcaecati eos
-              eaque Eligendi?
-            </p>
-            <img
-              class="feature__image"
-              src="./the-image.jpg"
-              alt="column layout showcase"
-            />
-            <p class="feature__description">
-              Amet alias accusamus aut possimus aliquid! Repellat nisi pariatur
-              rem molestiae in! Assumenda veritatis repellat architecto totam
-              sint vel eum, cupiditate Numquam ducimus voluptate magni harum
-              perspiciatis molestias Inventore ut?
-            </p>
-          </section>
-        </div>
-      </section>
-      <section class="feature">
-        <div class="container">
-          <section>
-            <h3 class="feature__title feature__title--ascent">Break it down</h3>
-            <p class="feature__description feature__description--ascent">
-              Dolor necessitatibus maiores voluptatum error delectus? Cum
-              exercitationem repellat non qui facere Totam autem dolore rerum
-              deserunt mollitia At autem cumque fuga amet culpa? Velit eius
-              error error necessitatibus debitis.
-            </p>
-          </section>
-          <section>
-            <h3 class="feature__title feature__title--ascent">
-              Work your way up
-            </h3>
-            <p class="feature__description feature__description--ascent">
-              Elit vel consequatur nulla corporis tempora? Nemo delectus ea
-              labore mollitia delectus Corporis perferendis harum eos similique
-              iste. Voluptatem a nulla provident quos dolorem Animi officia
-              cupiditate mollitia animi nobis
-            </p>
-          </section>
-          <section>
-            <h3 class="feature__title feature__title--ascent">
-              Dolor expedita enim
-            </h3>
-            <p class="feature__description feature__description--ascent">
-              Lorem nisi ducimus ad culpa adipisci? Iste sit voluptate suscipit
-              veniam architecto ab? Eveniet eligendi ad quos assumenda illo
-              eaque ducimus Animi porro expedita perspiciatis necessitatibus
-              nemo non facilis labore.
-            </p>
-          </section>
-        </div>
-      </section>
+      <div class="feature-row feature-row--two-columns">
+        <section class="feature feature-column--bg-white">
+          <div class="container">
+            <section>
+              <h3 class="feature__title">It doesn't have to be so hard</h3>
+              <p class="feature__description">
+                Lorem ex sit aspernatur cum neque, harum quasi error natus
+                exercitationem? Et iusto temporibus quasi quam tempora
+                Dignissimos porro omnis soluta sequi voluptates Natus itaque aut
+                obcaecati eos eaque Eligendi?
+              </p>
+              <img
+                class="feature__image"
+                src="./the-image.jpg"
+                alt="column layout showcase"
+              />
+              <p class="feature__description">
+                Amet alias accusamus aut possimus aliquid! Repellat nisi
+                pariatur rem molestiae in! Assumenda veritatis repellat
+                architecto totam sint vel eum, cupiditate Numquam ducimus
+                voluptate magni harum perspiciatis molestias Inventore ut?
+              </p>
+            </section>
+          </div>
+        </section>
+        <section class="feature feature--darkbg">
+          <div class="container">
+            <section>
+              <h3 class="feature__title feature__title--ascent">
+                Break it down
+              </h3>
+              <p class="feature__description feature__description--ascent">
+                Dolor necessitatibus maiores voluptatum error delectus? Cum
+                exercitationem repellat non qui facere Totam autem dolore rerum
+                deserunt mollitia At autem cumque fuga amet culpa? Velit eius
+                error error necessitatibus debitis.
+              </p>
+            </section>
+            <section>
+              <h3 class="feature__title feature__title--ascent">
+                Work your way up
+              </h3>
+              <p class="feature__description feature__description--ascent">
+                Elit vel consequatur nulla corporis tempora? Nemo delectus ea
+                labore mollitia delectus Corporis perferendis harum eos
+                similique iste. Voluptatem a nulla provident quos dolorem Animi
+                officia cupiditate mollitia animi nobis
+              </p>
+            </section>
+            <section>
+              <h3 class="feature__title feature__title--ascent">
+                Dolor expedita enim
+              </h3>
+              <p class="feature__description feature__description--ascent">
+                Lorem nisi ducimus ad culpa adipisci? Iste sit voluptate
+                suscipit veniam architecto ab? Eveniet eligendi ad quos
+                assumenda illo eaque ducimus Animi porro expedita perspiciatis
+                necessitatibus nemo non facilis labore.
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
         <h2 class="footer__title">Just scratching the surface</h2>
-        <section class="about">
-          <h4 class="about__subtitle">About our company</h4>
-          <p class="about__description">
-            Ipsum adipisicing impedit modi rerum atque! Error dolor quas in
-            libero labore voluptatum. Error quasi odit sed atque quasi
-            necessitatibus. Consectetur blanditiis deleniti facere aspernatur
-            excepturi Velit magni eius nesciunt magni consectetur atque fuga
-            fuga Dolore quibusdam necessitatibus accusamus nisi quis Id incidunt
-            nam soluta voluptatum accusamus molestiae Molestias deleniti.
-          </p>
-        </section>
-        <section class="about">
-          <h4 class="about__subtitle">Getting around</h4>
-          <p class="about__description">
-            <a class="about__link" href="#">Home</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">About</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Contact</a>
-          </p>
-        </section>
-        <section class="about">
-          <h4 class="about__subtitle">Other things</h4>
-          <p class="about__description">
-            <a class="about__link" href="#">Sit reiciendis?</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Elit quo</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Amet architecto?</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Adipisicing rerum</a>
-          </p>
-        </section>
-        <section class="about">
-          <h4 class="about__subtitle">And more</h4>
-          <p class="about__description">
-            <a class="about__link" href="#">Sit reiciendis?</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Elit quo</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Amet architecto?</a>
-          </p>
-          <p class="about__description">
-            <a class="about__link" href="#">Adipisicing rerum</a>
-          </p>
-        </section>
+        <div class="footer-row">
+          <section class="about about--smaller">
+            <h4 class="about__subtitle">About our company</h4>
+            <p class="about__description">
+              Ipsum adipisicing impedit modi rerum atque! Error dolor quas in
+              libero labore voluptatum. Error quasi odit sed atque quasi
+              necessitatibus. Consectetur blanditiis deleniti facere aspernatur
+              excepturi Velit magni eius nesciunt magni consectetur atque fuga
+              fuga Dolore quibusdam necessitatibus accusamus nisi quis Id
+              incidunt nam soluta voluptatum accusamus molestiae Molestias
+              deleniti.
+            </p>
+          </section>
+          <section class="about">
+            <h4 class="about__subtitle">Getting around</h4>
+            <p class="about__description">
+              <a class="about__link" href="#">Home</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">About</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Contact</a>
+            </p>
+          </section>
+          <section class="about">
+            <h4 class="about__subtitle">Other things</h4>
+            <p class="about__description">
+              <a class="about__link" href="#">Sit reiciendis?</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Elit quo</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Amet architecto?</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Adipisicing rerum</a>
+            </p>
+          </section>
+          <section class="about">
+            <h4 class="about__subtitle">And more</h4>
+            <p class="about__description">
+              <a class="about__link" href="#">Sit reiciendis?</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Elit quo</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Amet architecto?</a>
+            </p>
+            <p class="about__description">
+              <a class="about__link" href="#">Adipisicing rerum</a>
+            </p>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
