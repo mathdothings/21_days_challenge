@@ -30,9 +30,32 @@ html {
   background-color: var(--dark);
   font-family: var(--oswald);
   color: var(--white);
-  text-align: center;
   font-size: 1.125rem;
   padding: 3rem 0;
+  text-align: right;
+}
+
+.nav-toggle--button {
+  color: var(--brown);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--white);
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-toggle--caption {
+  display: inline;
+}
+
+.nav-toggle--button-rotate {
+  transform: rotate(180deg);
+}
+
+.nav-toggle--visible {
+  display: none;
 }
 
 /* different CRL button */
@@ -51,6 +74,7 @@ html {
 .nav__menu {
   padding-left: 0;
   list-style: none;
+  text-align: center;
 }
 
 /* remove margin-top for the first nav__item element */
