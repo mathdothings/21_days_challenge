@@ -22,7 +22,7 @@ html {
 }
 
 .container {
-  width: min(90%, 1200px);
+  width: min(85%, 1200px);
   margin: 0 auto;
 }
 
@@ -32,19 +32,19 @@ html {
   color: var(--white);
   text-align: center;
   font-size: 1.125rem;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding: 3rem 0;
 }
 
 /* different CRL button */
 .nav__menu--primary .nav__link {
   padding: 0.5rem;
-  border: 2px solid var(--white);
+  border: 2px solid var(--brown);
   border-radius: 50%;
   background-color: var(--gray);
 }
 
-.nav__menu--primary .nav__link:hover .nav__menu--primary .nav__link:focus {
+.nav__menu--primary .nav__link:hover,
+.nav__menu--primary .nav__link:focus {
   background-color: var(--brown);
   opacity: 1;
 }
@@ -52,6 +52,11 @@ html {
 .nav__menu {
   padding-left: 0;
   list-style: none;
+}
+
+/* remove margin-top for the first nav__item element */
+.nav__menu--primary .nav__item {
+  margin-top: 0;
 }
 
 .nav__item {
@@ -62,6 +67,7 @@ html {
 .nav__link {
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .nav__link:hover,
@@ -86,6 +92,7 @@ html {
 .hero {
   background-color: var(--middle);
   color: var(--white);
+  padding: 3rem 0;
 }
 
 .hero__title {
@@ -93,6 +100,7 @@ html {
   text-align: center;
   font-size: 3rem;
   font-family: var(--oswald);
+  line-height: 1.25;
 }
 
 .hero__title--ascent {
@@ -108,7 +116,6 @@ html {
 
 .hero__link {
   display: inline-block;
-  margin-bottom: 2rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
   color: var(--white);
@@ -126,7 +133,7 @@ html {
 .feature {
   background-color: var(--soft);
   color: var(--dark);
-  text-align: center;
+  padding: 3rem 0;
 }
 
 .feature__title {
@@ -134,10 +141,73 @@ html {
   padding: 2rem 0;
   font-family: var(--oswald);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .feature__description {
   color: var(--gray);
   font-family: var(--montserrat);
   font-size: 1rem;
+}
+
+/* select 3rd direct child of .main who is also a .feature */
+.main > .feature:nth-child(3) {
+  background-color: var(--white);
+}
+
+.feature__image {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+/* select 3rd direct child of .main who is also a .feature */
+.main > .feature:nth-child(4) {
+  background-color: var(--dark);
+}
+
+.feature__title--ascent {
+  color: var(--white);
+}
+
+.feature__description--ascent {
+  color: var(--gray);
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--dark);
+  padding: 3rem 0;
+}
+
+.footer__title {
+  color: var(--brown);
+  font-family: var(--oswald);
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.about__subtitle {
+  color: var(--brown);
+  margin-bottom: 1rem;
+  font-family: var(--oswald);
+}
+
+.about__description {
+  margin-bottom: 1rem;
+  color: var(--gray);
+  font-family: var(--montserrat);
+  font-size: 0.85rem;
+  text-align: justify;
+}
+
+.about__link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.about__link:hover,
+.about__link:focus {
+  opacity: 0.5;
 }
