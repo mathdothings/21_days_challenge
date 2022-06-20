@@ -40,7 +40,6 @@ html {
   padding: 0.5rem;
   border: 2px solid var(--brown);
   border-radius: 50%;
-  background-color: var(--gray);
 }
 
 .nav__menu--primary .nav__link:hover,
@@ -205,6 +204,7 @@ html {
 .about__link {
   text-decoration: none;
   color: var(--white);
+  display: inline-block;
 }
 
 .about__link:hover,
