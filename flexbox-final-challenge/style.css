@@ -173,6 +173,7 @@ html {
   color: var(--gray);
   font-family: var(--montserrat);
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* select 3rd direct child of .main who is also a .feature */
@@ -302,10 +303,6 @@ html {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-  }
-
-  .feature__description {
-    margin-bottom: 1rem;
   }
 
   .feature-column--bg-white {
