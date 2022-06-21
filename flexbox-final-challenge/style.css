@@ -134,7 +134,7 @@ html {
 
 .hero__description {
   padding-bottom: 1rem;
-  color: var(--white);
+  color: var(--gray);
   font-size: 1rem;
   font-family: var(--montserrat);
 }
