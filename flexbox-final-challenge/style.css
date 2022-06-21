@@ -317,9 +317,10 @@ html {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    justify-content: center;
   }
 
   .about--smaller {
-    width: 40%;
+    width: 50%;
   }
 }
